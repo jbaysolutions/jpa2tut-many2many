@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence">
+  <persistence-unit name="JPATutorial3PU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>com.jbaysolutions.blog.entity.EmployeeEntity</class>
+    <class>com.jbaysolutions.blog.entity.CompanyEntity</class>
+    <class>com.jbaysolutions.blog.entity.ClientEntity</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="eclipselink.jdbc.password" value="12345"/>
+      <property name="eclipselink.jdbc.user" value="jbay"/>
+      <property name="eclipselink.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="eclipselink.jdbc.url" value="jdbc:mysql://localhost:3306/jpatutorial3"/>
+    </properties>
+  </persistence-unit>
+</persistence>
